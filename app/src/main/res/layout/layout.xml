@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:visibility="invisible"
+    android:id="@+id/switchLayout">
+
+    <TextView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Total"
+    android:id="@+id/total"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Eating"
+        android:id="@+id/eating2"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Napping"
+        android:id="@+id/napping2"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="other"
+        android:id="@+id/other2"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="relaxing"
+        android:id="@+id/relaxing2"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="working"
+        android:id="@+id/working2"
+        android:textColor="#ffffff"/>
+
+
+</LinearLayout>

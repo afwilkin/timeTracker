@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" android:id="@+id/relative"
+    android:visibility="visible"
+    >
+<ViewFlipper
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewflipper">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Going to bed"
+                android:id="@+id/goingToBed"
+                android:layout_weight="1"
+                android:background="#ea1717" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentStart="false"
+            android:layout_weight="9"
+            android:layout_alignParentTop="false">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:text="Working"
+                android:id="@+id/working"
+                android:layout_below="@+id/relaxing"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:background="#1e8fcc"
+                android:outlineProvider="background" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:text="Relaxing"
+                android:id="@+id/relaxing"
+                android:layout_below="@+id/napping"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+                android:background="#1e8fcc" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:text="Eating"
+                android:id="@+id/eating"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+
+                android:background="#1e8fcc" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:text="Napping"
+                android:id="@+id/napping"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+
+                android:background="#1e8fcc" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:text="Other"
+                android:id="@+id/other"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1"
+
+                android:background="#1e8fcc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:visibility="gone"
+        android:id="@+id/switchLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:id="@+id/total"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Eating"
+            android:id="@+id/eating2"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Napping"
+            android:id="@+id/napping2"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="other"
+            android:id="@+id/other2"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="relaxing"
+            android:id="@+id/relaxing2"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="working"
+            android:id="@+id/working2"
+            android:textColor="#ffffff"/>
+
+
+
+    </LinearLayout>
+
+</ViewFlipper>
+</RelativeLayout>
